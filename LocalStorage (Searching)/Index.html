@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Local Storage</h1>
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search Here...."
+      onkeyup="searchTable()"
+    />
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" /><br /><br />
+
+      <label for="contact">Contact :</label>
+      <input type="text" id="contact" name="contact" /><br /><br />
+
+      <button type="submit" onclick="handleSubmit(event)" class="submit">
+        Submit
+      </button>
+      <button type="submit" class="update">Update</button>
+    </form>
+
+    <table id="Table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
